@@ -9,8 +9,6 @@ def insertSort(alist):
         position = passnum
         while position > 0 and alist[position - 1] > alist[position]:
             alist[position - 1], alist[position] = alist[position], alist[position - 1]
-            if alist[position - 2] < alist[position - 1]:
-                break
             position -= 1
 if __name__ == '__main__':
     testlist = [9, 8, 7, 6, 5, 1, 2, 4, 0]
